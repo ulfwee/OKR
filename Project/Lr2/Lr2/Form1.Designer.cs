@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -103,5 +104,14 @@
         private Button button2;
         private Button button3;
         private Label label1;
+=======
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
+        }
+
+        #endregion
+>>>>>>> 6b47de9 (Changes)
     }
 }

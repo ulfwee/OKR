@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Form1.cs
 using System;
 using System.Collections.Generic;
@@ -5,6 +6,8 @@ using System.IO;
 using System.Text.Json;
 using System.Windows.Forms;
 
+=======
+>>>>>>> 6b47de9 (Changes)
 namespace Lr2
 {
     public partial class Form1 : Form
@@ -13,6 +16,7 @@ namespace Lr2
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -51,3 +55,7 @@ namespace Lr2
         }
     }
 }
+=======
+    }
+}
+>>>>>>> 6b47de9 (Changes)

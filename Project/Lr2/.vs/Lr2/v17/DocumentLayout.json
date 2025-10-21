@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\lr2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|solutionrelative:lr2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -37,6 +38,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\questions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:questions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+=======
+      "AbsoluteMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\documents\\okr\\project\\lr2\\lr2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|solutionrelative:lr2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 6b47de9 (Changes)
     }
   ],
   "DocumentGroupContainers": [
@@ -46,6 +51,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
           "Children": [
             {
@@ -63,12 +69,20 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+>>>>>>> 6b47de9 (Changes)
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs",
               "RelativeDocumentMoniker": "Lr2\\Form1.cs",
               "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs [Design]",
               "RelativeToolTip": "Lr2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-10-28T11:43:21.53Z",
               "EditorCaption": " [Design]"
             },
@@ -157,6 +171,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-31T08:08:42.588Z"
+=======
+              "WhenOpened": "2025-10-21T09:17:06.204Z",
+              "EditorCaption": " [Design]"
+>>>>>>> 6b47de9 (Changes)
             }
           ]
         }
