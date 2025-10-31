@@ -1,3 +1,10 @@
+// Form1.cs
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using System.Windows.Forms;
+
 namespace Lr2
 {
     public partial class Form1 : Form
@@ -21,9 +28,26 @@ namespace Lr2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            var results = LoadResults();
+            Form3 form3 = new Form3(results);
             form3.Show();
             this.Hide();
+        }
+
+        private List<QuizResult> LoadResults()
+        {
+            string filePath = Path.Combine(Application.StartupPath, "results.json");
+            if (!File.Exists(filePath)) return new List<QuizResult>();
+
+            try
+            {
+                string json = File.ReadAllText(filePath);
+                return JsonSerializer.Deserialize<List<QuizResult>>(json) ?? new List<QuizResult>();
+            }
+            catch
+            {
+                return new List<QuizResult>();
+            }
         }
     }
 }

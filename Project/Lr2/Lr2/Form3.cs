@@ -1,27 +1,54 @@
-﻿using System;
+﻿// Form3.cs
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lr2
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        public Form3(List<QuizResult> results)
         {
             InitializeComponent();
+            LoadResults(results);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void LoadResults(List<QuizResult> results)
         {
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Date & Time", typeof(string));
+            dt.Columns.Add("Correct", typeof(int));
+            dt.Columns.Add("Total", typeof(int));
+
+            foreach (var r in results)
+            {
+                dt.Rows.Add(r.Date, r.CorrectAnswers, r.TotalQuestions);
+            }
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            // Back button
+            Button btnBack = new Button
+            {
+                Text = "Back to Menu",
+                Dock = DockStyle.Bottom,
+                Height = 40
+            };
+            btnBack.Click += (s, e) =>
+            {
+                new Form1().Show();
+                this.Hide();
+            };
+
+            this.Controls.Add(btnBack);
+            dataGridView1.Dock = DockStyle.Fill;
+            this.Controls.SetChildIndex(dataGridView1, 0);
         }
     }
 }
