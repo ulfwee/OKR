@@ -57,9 +57,10 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Bottom;
             pictureBox1.BackgroundImage = Properties.Resources.house1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(204, 343);
+            pictureBox1.Location = new Point(208, 343);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(55, 47);
             pictureBox1.TabIndex = 2;

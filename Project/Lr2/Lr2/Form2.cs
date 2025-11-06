@@ -18,6 +18,7 @@ namespace Lr2
         {
             InitializeComponent();
             LoadQuestions();
+            SetProgressBarMax();
             DisplayQuestion();
 
             radioButton1.CheckedChanged += RadioButton_CheckedChanged;
