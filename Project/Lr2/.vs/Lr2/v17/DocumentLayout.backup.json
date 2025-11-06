@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|solutionrelative:lr2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|d:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u043E\u043A\u0440\\\u043B\u04402\\project\\lr2\\lr2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\lr2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{484AA716-96DA-4531-B0B8-9F607A5B3DAE}|Lr2\\Lr2.csproj|solutionrelative:lr2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -54,35 +54,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Class2.cs",
-              "DocumentMoniker": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class2.cs",
-              "RelativeDocumentMoniker": "Lr2\\Class2.cs",
-              "ToolTip": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class2.cs",
-              "RelativeToolTip": "Lr2\\Class2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:16:19.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class1.cs",
-              "RelativeDocumentMoniker": "Lr2\\Class1.cs",
-              "ToolTip": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class1.cs",
-              "RelativeToolTip": "Lr2\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T08:03:26.344Z"
             },
             {
               "$type": "Document",
@@ -117,8 +93,7 @@
               "ToolTip": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Form3.cs [Design]",
               "RelativeToolTip": "Lr2\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T09:09:52.739Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-25T09:09:52.739Z"
             },
             {
               "$type": "Document",
@@ -128,7 +103,7 @@
               "RelativeDocumentMoniker": "Lr2\\Form2.cs",
               "ToolTip": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Form2.cs*",
               "RelativeToolTip": "Lr2\\Form2.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAANoAAAAAAAAAAAAkwPMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-25T09:09:41.613Z",
               "EditorCaption": ""
@@ -172,6 +147,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class1.cs",
+              "RelativeDocumentMoniker": "Lr2\\Class1.cs",
+              "ToolTip": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class1.cs",
+              "RelativeToolTip": "Lr2\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:03:26.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Class2.cs",
+              "DocumentMoniker": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class2.cs",
+              "RelativeDocumentMoniker": "Lr2\\Class2.cs",
+              "ToolTip": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Class2.cs",
+              "RelativeToolTip": "Lr2\\Class2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T09:16:19.458Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Form3.Designer.cs",
               "DocumentMoniker": "D:\\\u043A\u043E\u043B\u0435\u0434\u0436\\\u041E\u041A\u0420\\\u041B\u04202\\Project\\Lr2\\Lr2\\Form3.Designer.cs",
@@ -180,8 +179,7 @@
               "RelativeToolTip": "Lr2\\Form3.Designer.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAlwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T10:50:26.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T10:50:26.47Z"
             },
             {
               "$type": "Document",

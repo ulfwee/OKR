@@ -45,6 +45,7 @@
             // 
             // progressBar1
             // 
+            progressBar1.ForeColor = Color.Tomato;
             progressBar1.Location = new Point(-2, 303);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(591, 25);
