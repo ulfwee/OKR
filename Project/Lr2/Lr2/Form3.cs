@@ -28,27 +28,14 @@ namespace Lr2
 
             dataGridView1.DataSource = dt;
 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ReadOnly = true;
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            
+        }
 
-            // Back button
-            Button btnBack = new Button
-            {
-                Text = "Back to Menu",
-                Dock = DockStyle.Bottom,
-                Height = 40
-            };
-            btnBack.Click += (s, e) =>
-            {
-                new Form1().Show();
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
                 this.Hide();
-            };
-
-            this.Controls.Add(btnBack);
-            dataGridView1.Dock = DockStyle.Fill;
-            this.Controls.SetChildIndex(dataGridView1, 0);
         }
     }
 }

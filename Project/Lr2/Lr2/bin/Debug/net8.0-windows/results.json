@@ -5,8 +5,14 @@
     "TotalQuestions": 15
   },
   {
+<<<<<<< HEAD
     "Date": "2025-11-05 08:59:37",
     "CorrectAnswers": 0,
     "TotalQuestions": 0
+=======
+    "Date": "2025-11-06 14:55:41",
+    "CorrectAnswers": 11,
+    "TotalQuestions": 15
+>>>>>>> c8029e396291bfaf0561c4beb1afc0d5f71bd31f
   }
 ]

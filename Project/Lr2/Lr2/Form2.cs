@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace Lr2
 {
@@ -18,12 +19,24 @@ namespace Lr2
         {
             InitializeComponent();
             LoadQuestions();
+
+            // Initialize ProgressBar
+            SetProgressBarMax();
+
+
             DisplayQuestion();
 
             radioButton1.CheckedChanged += RadioButton_CheckedChanged;
             radioButton2.CheckedChanged += RadioButton_CheckedChanged;
             radioButton3.CheckedChanged += RadioButton_CheckedChanged;
             radioButton4.CheckedChanged += RadioButton_CheckedChanged;
+
+            label1.BackColor = System.Drawing.Color.Transparent;
+            button1.BackColor = Color.FromArgb(58, 90, 64);
+            button2.BackColor = Color.FromArgb(58, 90, 64);
+            button3.BackColor = Color.FromArgb(58, 90, 64);
+            this.groupBox1.BackColor = Color.Transparent;
+
         }
 
         private void LoadQuestions()
@@ -53,27 +66,33 @@ namespace Lr2
 
         private void DisplayQuestion()
         {
+            // Uncheck all radio buttons
             foreach (RadioButton rb in groupBox1.Controls.OfType<RadioButton>())
                 rb.Checked = false;
 
             if (questions.Count == 0) return;
 
             var q = questions[currentIndex];
-            textBox1.Text = $"{currentIndex + 1}. {q.Question}";
+            label1.Text = $"{currentIndex + 1}. {q.Question}";
 
             radioButton1.Text = q.Options[0];
             radioButton2.Text = q.Options[1];
             radioButton3.Text = q.Options[2];
             radioButton4.Text = q.Options[3];
 
+            // Restore saved answer if exists
             if (userAnswers.TryGetValue(currentIndex, out string saved))
             {
                 var rb = groupBox1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Text == saved);
                 if (rb != null) rb.Checked = true;
             }
 
+            // Enable/Disable navigation buttons
             button3.Enabled = currentIndex > 0;
             UpdateNextButton();
+
+            // Update ProgressBar
+            UpdateProgressBar();
         }
 
         private void UpdateNextButton()
@@ -91,7 +110,7 @@ namespace Lr2
             UpdateNextButton();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // Next
         {
             SaveCurrentAnswer();
 
@@ -150,7 +169,7 @@ namespace Lr2
             form3.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) // Previous
         {
             if (currentIndex > 0)
             {
@@ -159,12 +178,12 @@ namespace Lr2
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // Exit
         {
             Application.Exit();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e) // View Results
         {
             var results = LoadResults();
             Form3 form3 = new Form3(results);
@@ -187,5 +206,58 @@ namespace Lr2
                 return new List<QuizResult>();
             }
         }
+
+        // ==================== PROGRESSBAR LOGIC ====================
+
+        private void SetProgressBarMax()
+        {
+            if (questions.Count == 0)
+            {
+                progressBar1.Minimum = 0;
+                progressBar1.Maximum = 100;
+                progressBar1.Value = 0;
+                return;
+            }
+
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 100;
+            progressBar1.Step = (int)Math.Ceiling(100.0 / questions.Count);
+        }
+
+        private void UpdateProgressBar()
+        {
+            if (questions.Count == 0)
+            {
+                progressBar1.Value = 0;
+                return;
+            }
+
+            int percentage = (int)Math.Round((currentIndex + 1) * 100.0 / questions.Count);
+            if (percentage > 100) percentage = 100;
+            if (percentage < 0) percentage = 0;
+
+            progressBar1.Value = percentage;
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(183, 228, 199));
+
+            Rectangle area = new Rectangle(0,0,this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(183, 228, 199), Color.FromArgb(64, 145, 108), LinearGradientMode.BackwardDiagonal);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
+        }
+
+
+
     }
+
+
 }
