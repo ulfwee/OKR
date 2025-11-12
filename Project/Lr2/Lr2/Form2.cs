@@ -32,9 +32,9 @@ namespace Lr2
             radioButton4.CheckedChanged += RadioButton_CheckedChanged;
 
             label1.BackColor = System.Drawing.Color.Transparent;
-            button1.BackColor = Color.FromArgb(58, 90, 64);
-            button2.BackColor = Color.FromArgb(58, 90, 64);
-            button3.BackColor = Color.FromArgb(58, 90, 64);
+          //  button1.BackColor = Color.FromArgb(58, 90, 64);
+          //  button2.BackColor = Color.FromArgb(58, 90, 64);
+         //   button3.BackColor = Color.FromArgb(58, 90, 64);
             this.groupBox1.BackColor = Color.Transparent;
 
         }
@@ -250,7 +250,7 @@ namespace Lr2
             Pen pen = new Pen(Color.FromArgb(183, 228, 199));
 
             Rectangle area = new Rectangle(0,0,this.Width - 1, this.Height - 1);
-            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(183, 228, 199), Color.FromArgb(64, 145, 108), LinearGradientMode.BackwardDiagonal);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(183, 228, 199), Color.FromArgb(79, 136, 141), LinearGradientMode.BackwardDiagonal);
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }

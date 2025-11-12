@@ -38,7 +38,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.LightSalmon;
+            label1.BackColor = Color.LightBlue;
             label1.Font = new Font("Segoe Print", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
@@ -58,6 +58,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Bottom;
+            pictureBox1.BackColor = Color.LightBlue;
             pictureBox1.BackgroundImage = Properties.Resources.house1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Location = new Point(208, 343);
@@ -71,7 +72,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.MistyRose;
+            BackColor = Color.FromArgb(223, 255, 255);
             ClientSize = new Size(471, 398);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
