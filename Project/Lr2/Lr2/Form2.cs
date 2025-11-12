@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Windows.Forms;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Lr2
 {
@@ -15,12 +16,15 @@ namespace Lr2
         private int currentIndex = 0;
         private readonly Dictionary<int, string> userAnswers = new Dictionary<int, string>();
         private string selectedFilePath = "";
+        private int score = 0;
 
         public Form2()
         {
             InitializeComponent();
             label1.BackColor = Color.Transparent;
             groupBox1.BackColor = Color.Transparent;
+            pictureBox2.BackColor = Color.Transparent;
+
 
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             UpdateStyles();
@@ -132,10 +136,13 @@ namespace Lr2
 
         private void button2_Click(object sender, EventArgs e) 
         {
+
             SaveCurrentAnswer();
 
             if (currentIndex < questions.Count - 1)
             {
+                if (currentIndex > 0) pictureBox2.Enabled = true;
+
                 currentIndex++;
                 DisplayQuestion();
             }
@@ -200,15 +207,26 @@ namespace Lr2
 
         private void button1_Click(object sender, EventArgs e) // Exit
         {
+           
             Application.Exit();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e) // View Results
         {
-            var results = LoadResults();
-            Form3 form3 = new Form3(results);
-            this.Hide();
-            form3.Show();
+            RestartQuiz();
+        }
+        private void RestartQuiz()
+        {
+            currentIndex = 0;
+
+            score = 0;
+
+            progressBar1.Value = 0;
+
+            DisplayQuestion();
+
+            pictureBox2.Enabled = false;
+
         }
 
         private List<QuizResult> LoadResults()

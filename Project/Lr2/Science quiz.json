@@ -1,0 +1,77 @@
+[
+    {
+        "Question": "What is the chemical symbol for water?",
+        "Options": [ "H2O", "O2", "CO2", "NaCl" ],
+        "CorrectAnswer": "H2O"
+    },
+    {
+        "Question": "How many planets are in our Solar System?",
+        "Options": [ "7", "8", "9", "10" ],
+        "CorrectAnswer": "8"
+    },
+    {
+        "Question": "Which gas do humans exhale during respiration?",
+        "Options": [ "Oxygen", "Nitrogen", "Carbon dioxide", "Helium" ],
+        "CorrectAnswer": "Carbon dioxide"
+    },
+    {
+        "Question": "What is the powerhouse of the cell?",
+        "Options": [ "Nucleus", "Mitochondria", "Ribosome", "Chloroplast" ],
+        "CorrectAnswer": "Mitochondria"
+    },
+    {
+        "Question": "What planet is known for its rings?",
+        "Options": [ "Jupiter", "Mars", "Saturn", "Uranus" ],
+        "CorrectAnswer": "Saturn"
+    },
+    {
+        "Question": "What is the speed of light?",
+        "Options": [ "3x10^8 m/s", "3x10^6 m/s", "3x10^5 km/s", "3x10^4 m/s" ],
+        "CorrectAnswer": "3x10^8 m/s"
+    },
+    {
+        "Question": "Which organ is responsible for pumping blood?",
+        "Options": [ "Lungs", "Heart", "Kidney", "Liver" ],
+        "CorrectAnswer": "Heart"
+    },
+    {
+        "Question": "Which element has atomic number 6?",
+        "Options": [ "Oxygen", "Carbon", "Nitrogen", "Hydrogen" ],
+        "CorrectAnswer": "Carbon"
+    },
+    {
+        "Question": "What is the human body's largest organ?",
+        "Options": [ "Heart", "Skin", "Liver", "Lung" ],
+        "CorrectAnswer": "Skin"
+    },
+    {
+        "Question": "Which part of the plant absorbs water?",
+        "Options": [ "Leaf", "Root", "Stem", "Flower" ],
+        "CorrectAnswer": "Root"
+    },
+    {
+        "Question": "What type of celestial body is the Sun?",
+        "Options": [ "Planet", "Star", "Moon", "Asteroid" ],
+        "CorrectAnswer": "Star"
+    },
+    {
+        "Question": "Which force keeps planets in orbit around the sun?",
+        "Options": [ "Magnetism", "Gravity", "Friction", "Electricity" ],
+        "CorrectAnswer": "Gravity"
+    },
+    {
+        "Question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "Options": [ "Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D" ],
+        "CorrectAnswer": "Vitamin D"
+    },
+    {
+        "Question": "Which gas is essential for humans to breathe?",
+        "Options": [ "Oxygen", "Carbon Dioxide", "Nitrogen", "Helium" ],
+        "CorrectAnswer": "Oxygen"
+    },
+    {
+        "Question": "What is the chemical formula for table salt?",
+        "Options": [ "NaCl", "KCl", "CaCl2", "MgCl2" ],
+        "CorrectAnswer": "NaCl"
+    }
+]
