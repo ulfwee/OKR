@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             progressBar1 = new ProgressBar();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
@@ -39,6 +40,7 @@
             radioButton4 = new RadioButton();
             groupBox1 = new GroupBox();
             textBox1 = new TextBox();
+            imageList1 = new ImageList(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -160,7 +162,7 @@
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.Info;
+            textBox1.BackColor = Color.White;
             textBox1.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
             textBox1.Location = new Point(12, 7);
             textBox1.Multiline = true;
@@ -169,11 +171,17 @@
             textBox1.Size = new Size(499, 55);
             textBox1.TabIndex = 13;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Info;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(588, 328);
             Controls.Add(textBox1);
             Controls.Add(groupBox1);
@@ -184,6 +192,8 @@
             Controls.Add(progressBar1);
             Name = "Form2";
             Text = "Питання";
+            Load += Form2_Load;
+            Paint += Form2_Paint;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -204,5 +214,6 @@
         private RadioButton radioButton4;
         private GroupBox groupBox1;
         private TextBox textBox1;
+        private ImageList imageList1;
     }
 }

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace Lr2
 {
@@ -231,7 +232,22 @@ namespace Lr2
             progressBar1.Value = percentage;
         }
 
-        // ==========================================================
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(163, 177, 138));
+
+            Rectangle area = new Rectangle(0,0,this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(163, 177, 138), Color.FromArgb(58, 90, 64), LinearGradientMode.BackwardDiagonal);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
+        }
+
 
 
     }
