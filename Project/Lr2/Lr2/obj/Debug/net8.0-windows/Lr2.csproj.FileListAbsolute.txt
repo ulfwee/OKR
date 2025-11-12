@@ -24,7 +24,6 @@ D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\bin\Debug\net8.0-windows\Lr2.runtim
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\bin\Debug\net8.0-windows\Lr2.dll
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\bin\Debug\net8.0-windows\Lr2.pdb
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.Form1.resources
-D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.Form2.resources
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.Form3.resources
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.Properties.Resources.resources
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.csproj.GenerateResource.cache
@@ -38,3 +37,4 @@ D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\refint\Lr2
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.pdb
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.genruntimeconfig.cache
 D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\ref\Lr2.dll
+D:\коледж\ОКР\ЛР2\Project\Lr2\Lr2\obj\Debug\net8.0-windows\Lr2.Form2.resources

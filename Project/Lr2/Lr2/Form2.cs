@@ -1,11 +1,11 @@
-﻿// Form2.cs
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
 
 namespace Lr2
 {
@@ -14,35 +14,55 @@ namespace Lr2
         private List<Quiz> questions = new List<Quiz>();
         private int currentIndex = 0;
         private readonly Dictionary<int, string> userAnswers = new Dictionary<int, string>();
+        private string selectedFilePath = "";
 
         public Form2()
         {
             InitializeComponent();
-            LoadQuestions();
+            label1.BackColor = Color.Transparent;
+            groupBox1.BackColor = Color.Transparent;
 
-            // Initialize ProgressBar
-            SetProgressBarMax();
-
-
-            DisplayQuestion();
-
-            radioButton1.CheckedChanged += RadioButton_CheckedChanged;
-            radioButton2.CheckedChanged += RadioButton_CheckedChanged;
-            radioButton3.CheckedChanged += RadioButton_CheckedChanged;
-            radioButton4.CheckedChanged += RadioButton_CheckedChanged;
-
-            label1.BackColor = System.Drawing.Color.Transparent;
-          //  button1.BackColor = Color.FromArgb(58, 90, 64);
-          //  button2.BackColor = Color.FromArgb(58, 90, 64);
-         //   button3.BackColor = Color.FromArgb(58, 90, 64);
-            this.groupBox1.BackColor = Color.Transparent;
-
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+            UpdateStyles();
         }
 
-        private void LoadQuestions()
+        private void Form2_Load(object sender, EventArgs e)
         {
-            string filePath = "D:\\коледж\\ОКР\\ЛР2\\Project\\Lr2\\questions.json";
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Select quiz file";
+                openFileDialog.Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*";
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    selectedFilePath = openFileDialog.FileName;
+                    LoadQuestions(selectedFilePath);
+
+                    if (questions.Count > 0)
+                    {
+                        SetProgressBarMax();
+                        DisplayQuestion();
+
+                        radioButton1.CheckedChanged += RadioButton_CheckedChanged;
+                        radioButton2.CheckedChanged += RadioButton_CheckedChanged;
+                        radioButton3.CheckedChanged += RadioButton_CheckedChanged;
+                        radioButton4.CheckedChanged += RadioButton_CheckedChanged;
+                    }
+                    else
+                    {
+                        MessageBox.Show("The selected file has no valid questions.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        Close();
+                    }
+                }
+                else
+                {
+                    Close(); 
+                }
+            }
+        }
+
+        private void LoadQuestions(string filePath)
+        {
             if (File.Exists(filePath))
             {
                 try
@@ -60,13 +80,12 @@ namespace Lr2
             }
             else
             {
-                MessageBox.Show("questions.json not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("File not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void DisplayQuestion()
         {
-            // Uncheck all radio buttons
             foreach (RadioButton rb in groupBox1.Controls.OfType<RadioButton>())
                 rb.Checked = false;
 
@@ -80,25 +99,26 @@ namespace Lr2
             radioButton3.Text = q.Options[2];
             radioButton4.Text = q.Options[3];
 
-            // Restore saved answer if exists
             if (userAnswers.TryGetValue(currentIndex, out string saved))
             {
                 var rb = groupBox1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Text == saved);
                 if (rb != null) rb.Checked = true;
             }
 
-            // Enable/Disable navigation buttons
             button3.Enabled = currentIndex > 0;
             UpdateNextButton();
-
-            // Update ProgressBar
             UpdateProgressBar();
         }
 
         private void UpdateNextButton()
         {
             bool hasAnswer = groupBox1.Controls.OfType<RadioButton>().Any(r => r.Checked);
-            button2.Enabled = currentIndex < questions.Count - 1 || hasAnswer;
+
+            if (currentIndex == questions.Count - 1)
+                button2.Text = "End";
+
+
+            button2.Enabled = true;
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
@@ -110,7 +130,7 @@ namespace Lr2
             UpdateNextButton();
         }
 
-        private void button2_Click(object sender, EventArgs e) // Next
+        private void button2_Click(object sender, EventArgs e) 
         {
             SaveCurrentAnswer();
 
@@ -121,7 +141,7 @@ namespace Lr2
             }
             else
             {
-                FinishQuiz();
+                FinishQuiz(); 
             }
         }
 
@@ -239,25 +259,51 @@ namespace Lr2
             progressBar1.Value = percentage;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form2_Paint(object sender, PaintEventArgs e)
         {
             Graphics mgraphics = e.Graphics;
             Pen pen = new Pen(Color.FromArgb(183, 228, 199));
 
-            Rectangle area = new Rectangle(0,0,this.Width - 1, this.Height - 1);
-            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(183, 228, 199), Color.FromArgb(79, 136, 141), LinearGradientMode.BackwardDiagonal);
+            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area,
+                Color.FromArgb(183, 228, 199),
+                Color.FromArgb(79, 136, 141),
+                LinearGradientMode.BackwardDiagonal);
+
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
 
+        private void groupBox1_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox box = (GroupBox)sender;
 
+            if (box.Parent != null)
+            {
+                PaintEventArgs pea = new PaintEventArgs(e.Graphics, e.ClipRectangle);
+                GraphicsState state = e.Graphics.Save();
+                e.Graphics.TranslateTransform(-box.Left, -box.Top);
+                InvokePaintBackground(box.Parent, pea);
+                InvokePaint(box.Parent, pea);
+                e.Graphics.Restore(state);
+            }
 
+            Color borderColor = Color.Transparent;
+            using (Pen pen = new Pen(borderColor, 2))
+            {
+                Size textSize = TextRenderer.MeasureText(box.Text, box.Font);
+                Rectangle rect = new Rectangle(
+                    box.ClientRectangle.X,
+                    box.ClientRectangle.Y + (textSize.Height / 2),
+                    box.ClientRectangle.Width - 1,
+                    box.ClientRectangle.Height - (textSize.Height / 2) - 1);
+
+                e.Graphics.DrawRectangle(pen, rect);
+
+                TextRenderer.DrawText(e.Graphics, box.Text, box.Font,
+                    new Point(rect.X + 10, rect.Y - (textSize.Height / 2)),
+                    box.ForeColor);
+            }
+        }
     }
-
-
 }

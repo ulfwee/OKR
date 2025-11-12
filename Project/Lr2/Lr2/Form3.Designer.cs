@@ -78,6 +78,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "Form3";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Історія";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

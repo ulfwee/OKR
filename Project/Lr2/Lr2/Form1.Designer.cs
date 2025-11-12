@@ -92,6 +92,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Вікторина";
             ResumeLayout(false);
             PerformLayout();

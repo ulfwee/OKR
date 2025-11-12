@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             progressBar1 = new ProgressBar();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
@@ -39,7 +38,6 @@
             button3 = new Button();
             radioButton4 = new RadioButton();
             groupBox1 = new GroupBox();
-            imageList1 = new ImageList(components);
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
@@ -50,7 +48,7 @@
             progressBar1.ForeColor = Color.FromArgb(192, 255, 192);
             progressBar1.Location = new Point(-2, 303);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(591, 25);
+            progressBar1.Size = new Size(763, 25);
             progressBar1.TabIndex = 0;
             // 
             // radioButton1
@@ -97,7 +95,7 @@
             button1.BackColor = Color.FromArgb(121, 202, 202);
             button1.Font = new Font("Comic Sans MS", 9F);
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(183, 249);
+            button1.Location = new Point(269, 249);
             button1.Name = "button1";
             button1.Size = new Size(207, 37);
             button1.TabIndex = 7;
@@ -110,7 +108,7 @@
             button2.BackColor = Color.FromArgb(204, 255, 255);
             button2.Font = new Font("Comic Sans MS", 9F);
             button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(424, 243);
+            button2.Location = new Point(528, 243);
             button2.Name = "button2";
             button2.Size = new Size(109, 49);
             button2.TabIndex = 8;
@@ -122,7 +120,7 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.klipartz_com;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(546, 263);
+            pictureBox2.Location = new Point(718, 1);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(43, 34);
             pictureBox2.TabIndex = 9;
@@ -134,7 +132,7 @@
             button3.BackColor = Color.FromArgb(204, 255, 255);
             button3.Font = new Font("Comic Sans MS", 9F);
             button3.ForeColor = Color.Black;
-            button3.Location = new Point(46, 243);
+            button3.Location = new Point(108, 243);
             button3.Name = "button3";
             button3.Size = new Size(109, 49);
             button3.TabIndex = 10;
@@ -157,28 +155,25 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = SystemColors.Control;
             groupBox1.Controls.Add(radioButton1);
             groupBox1.Controls.Add(radioButton4);
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton3);
-            groupBox1.Location = new Point(24, 53);
+            groupBox1.ForeColor = SystemColors.ControlText;
+            groupBox1.Location = new Point(53, 49);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(250, 165);
+            groupBox1.Size = new Size(497, 180);
             groupBox1.TabIndex = 12;
             groupBox1.TabStop = false;
-            // 
-            // imageList1
-            // 
-            imageList1.ColorDepth = ColorDepth.Depth32Bit;
-            imageList1.ImageSize = new Size(16, 16);
-            imageList1.TransparentColor = Color.Transparent;
+            groupBox1.Paint += groupBox1_Paint;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(12, 13);
+            label1.Location = new Point(14, 12);
             label1.Name = "label1";
             label1.Size = new Size(70, 23);
             label1.TabIndex = 13;
@@ -189,7 +184,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(588, 328);
+            ClientSize = new Size(760, 328);
             Controls.Add(label1);
             Controls.Add(groupBox1);
             Controls.Add(button3);
@@ -198,6 +193,7 @@
             Controls.Add(button1);
             Controls.Add(progressBar1);
             Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Питання";
             Load += Form2_Load;
             Paint += Form2_Paint;
@@ -220,7 +216,6 @@
         private Button button3;
         private RadioButton radioButton4;
         private GroupBox groupBox1;
-        private ImageList imageList1;
         private Label label1;
     }
 }
