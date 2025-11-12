@@ -30,6 +30,13 @@ namespace Lr2
             radioButton2.CheckedChanged += RadioButton_CheckedChanged;
             radioButton3.CheckedChanged += RadioButton_CheckedChanged;
             radioButton4.CheckedChanged += RadioButton_CheckedChanged;
+
+            label1.BackColor = System.Drawing.Color.Transparent;
+            button1.BackColor = Color.FromArgb(58, 90, 64);
+            button2.BackColor = Color.FromArgb(58, 90, 64);
+            button3.BackColor = Color.FromArgb(58, 90, 64);
+            this.groupBox1.BackColor = Color.Transparent;
+
         }
 
         private void LoadQuestions()
@@ -66,7 +73,7 @@ namespace Lr2
             if (questions.Count == 0) return;
 
             var q = questions[currentIndex];
-            textBox1.Text = $"{currentIndex + 1}. {q.Question}";
+            label1.Text = $"{currentIndex + 1}. {q.Question}";
 
             radioButton1.Text = q.Options[0];
             radioButton2.Text = q.Options[1];
@@ -240,10 +247,10 @@ namespace Lr2
         private void Form2_Paint(object sender, PaintEventArgs e)
         {
             Graphics mgraphics = e.Graphics;
-            Pen pen = new Pen(Color.FromArgb(163, 177, 138));
+            Pen pen = new Pen(Color.FromArgb(183, 228, 199));
 
             Rectangle area = new Rectangle(0,0,this.Width - 1, this.Height - 1);
-            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(163, 177, 138), Color.FromArgb(58, 90, 64), LinearGradientMode.BackwardDiagonal);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(183, 228, 199), Color.FromArgb(64, 145, 108), LinearGradientMode.BackwardDiagonal);
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
