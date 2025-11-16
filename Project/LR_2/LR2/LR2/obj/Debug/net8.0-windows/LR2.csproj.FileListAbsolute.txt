@@ -1,0 +1,17 @@
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\bin\Debug\net8.0-windows\LR2.exe
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\bin\Debug\net8.0-windows\LR2.deps.json
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\bin\Debug\net8.0-windows\LR2.runtimeconfig.json
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\bin\Debug\net8.0-windows\LR2.dll
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\bin\Debug\net8.0-windows\LR2.pdb
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.Form1.resources
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.csproj.GenerateResource.cache
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.AssemblyInfoInputs.cache
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.AssemblyInfo.cs
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.csproj.CoreCompileInputs.cache
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.sourcelink.json
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.dll
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\refint\LR2.dll
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.pdb
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\LR2.genruntimeconfig.cache
+C:\Users\Користувач\Documents\OKR\Project\LR_2\LR2\LR2\obj\Debug\net8.0-windows\ref\LR2.dll
