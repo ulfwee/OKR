@@ -22,7 +22,7 @@ namespace LR2
         {
            // var results = LoadResults();
            // Form3 form3 = new Form3(results);
-           // form3.Show();
+           //form3.Show();
             this.Hide();
         }
     }
