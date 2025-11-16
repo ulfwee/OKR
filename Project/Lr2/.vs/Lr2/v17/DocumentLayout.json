@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lr2\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lr2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\lr2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lr2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\lr2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lr2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lr2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,18 +62,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs",
               "RelativeDocumentMoniker": "Lr2\\Form1.cs",
               "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs [Design]",
               "RelativeToolTip": "Lr2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T16:58:04.277Z"
+              "WhenOpened": "2025-11-16T16:58:04.277Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form3.cs",
               "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form3.cs",
               "RelativeDocumentMoniker": "Lr2\\Form3.cs",
@@ -86,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form3.cs",
               "RelativeDocumentMoniker": "Lr2\\Form3.cs",
@@ -103,22 +104,23 @@
               "RelativeDocumentMoniker": "Lr2\\Form2.cs",
               "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form2.cs",
               "RelativeToolTip": "Lr2\\Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPwAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAAALkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T16:58:04.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs",
               "RelativeDocumentMoniker": "Lr2\\Form1.cs",
               "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Documents\\OKR\\Project\\Lr2\\Lr2\\Form1.cs",
               "RelativeToolTip": "Lr2\\Form1.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T16:58:04.984Z"
+              "WhenOpened": "2025-11-16T16:58:04.984Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
