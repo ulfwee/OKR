@@ -1,0 +1,7 @@
+C:\Users\Користувач\Documents\OKR\test1\bin\Debug\net9.0\CoverletSourceRootsMapping_test1
+C:\Users\Користувач\Documents\OKR\test1\obj\Debug\net9.0\test1.csproj.AssemblyReference.cache
+C:\Users\Користувач\Documents\OKR\test1\obj\Debug\net9.0\test1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Користувач\Documents\OKR\test1\obj\Debug\net9.0\test1.AssemblyInfoInputs.cache
+C:\Users\Користувач\Documents\OKR\test1\obj\Debug\net9.0\test1.AssemblyInfo.cs
+C:\Users\Користувач\Documents\OKR\test1\obj\Debug\net9.0\test1.csproj.CoreCompileInputs.cache
+C:\Users\Користувач\Documents\OKR\test1\obj\Debug\net9.0\test1.sourcelink.json
