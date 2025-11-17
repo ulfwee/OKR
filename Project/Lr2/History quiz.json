@@ -1,0 +1,77 @@
+﻿[
+    {
+        "Question": "Who was the first President of the U.S.?",
+        "Options": [ "Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams" ],
+        "CorrectAnswer": "George Washington"
+    },
+    {
+        "Question": "In which year did World War II end?",
+        "Options": [ "1942", "1945", "1948", "1950" ],
+        "CorrectAnswer": "1945"
+    },
+    {
+        "Question": "Which empire built the Colosseum?",
+        "Options": [ "Greek", "Roman", "Byzantine", "Ottoman" ],
+        "CorrectAnswer": "Roman"
+    },
+    {
+        "Question": "Who discovered America in 1492?",
+        "Options": [ "Vasco da Gama", "Christopher Columbus", "Marco Polo", "James Cook" ],
+        "CorrectAnswer": "Christopher Columbus"
+    },
+    {
+        "Question": "Which war was fought between North and South U.S.?",
+        "Options": [ "World War I", "Civil War", "Revolutionary War", "Vietnam War" ],
+        "CorrectAnswer": "Civil War"
+    },
+    {
+        "Question": "Who was the first emperor of China?",
+        "Options": [ "Qin Shi Huang", "Sun Tzu", "Confucius", "Kublai Khan" ],
+        "CorrectAnswer": "Qin Shi Huang"
+    },
+    {
+        "Question": "What wall divided Berlin from 1961 to 1989?",
+        "Options": [ "Great Wall", "Berlin Wall", "Hadrian's Wall", "Western Wall" ],
+        "CorrectAnswer": "Berlin Wall"
+    },
+    {
+        "Question": "Who was the British Prime Minister during WWII?",
+        "Options": [ "Winston Churchill", "Neville Chamberlain", "Tony Blair", "Margaret Thatcher" ],
+        "CorrectAnswer": "Winston Churchill"
+    },
+    {
+        "Question": "Which civilization built Machu Picchu?",
+        "Options": [ "Aztec", "Inca", "Maya", "Olmec" ],
+        "CorrectAnswer": "Inca"
+    },
+    {
+        "Question": "Who wrote the Declaration of Independence?",
+        "Options": [ "Thomas Jefferson", "Benjamin Franklin", "George Washington", "John Adams" ],
+        "CorrectAnswer": "Thomas Jefferson"
+    },
+    {
+        "Question": "Which event started World War I?",
+        "Options": [ "Assassination of Archduke Ferdinand", "Treaty of Versailles", "Invasion of Poland", "Battle of Waterloo" ],
+        "CorrectAnswer": "Assassination of Archduke Ferdinand"
+    },
+    {
+        "Question": "Who was known as the Maid of Orléans?",
+        "Options": [ "Joan of Arc", "Catherine de Medici", "Marie Antoinette", "Eleanor of Aquitaine" ],
+        "CorrectAnswer": "Joan of Arc"
+    },
+    {
+        "Question": "Which revolution occurred in 1789?",
+        "Options": [ "Russian Revolution", "French Revolution", "American Revolution", "Industrial Revolution" ],
+        "CorrectAnswer": "French Revolution"
+    },
+    {
+        "Question": "Which empire was ruled by Genghis Khan?",
+        "Options": [ "Roman", "Mongol", "Ottoman", "Persian" ],
+        "CorrectAnswer": "Mongol"
+    },
+    {
+        "Question": "What year did the Titanic sink?",
+        "Options": [ "1910", "1912", "1914", "1916" ],
+        "CorrectAnswer": "1912"
+    }
+]

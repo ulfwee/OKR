@@ -1,0 +1,77 @@
+[
+    {
+        "Question": "Which of these is NOT a programming language?",
+        "Options": [ "Python", "Ruby", "HTML", "Java" ],
+        "CorrectAnswer": "HTML"
+    },
+    {
+        "Question": "In C++, which operator is used to access members of a class?",
+        "Options": [ ".", "::", "->", "#" ],
+        "CorrectAnswer": "."
+    },
+    {
+        "Question": "Which data structure works on FIFO basis?",
+        "Options": [ "Stack", "Queue", "Array", "List" ],
+        "CorrectAnswer": "Queue"
+    },
+    {
+        "Question": "Which language runs in a browser?",
+        "Options": [ "C#", "Python", "JavaScript", "C++" ],
+        "CorrectAnswer": "JavaScript"
+    },
+    {
+        "Question": "Which keyword defines a constant in C#?",
+        "Options": [ "const", "define", "readonly", "final" ],
+        "CorrectAnswer": "const"
+    },
+    {
+        "Question": "What does 'int' stand for in C++?",
+        "Options": [ "Integer", "Internal", "Integration", "Interval" ],
+        "CorrectAnswer": "Integer"
+    },
+    {
+        "Question": "Which method is used to start execution in C#?",
+        "Options": [ "Main", "Start", "Init", "Execute" ],
+        "CorrectAnswer": "Main"
+    },
+    {
+        "Question": "Which symbol starts a single-line comment in C++?",
+        "Options": [ "//", "#", "/*", "--" ],
+        "CorrectAnswer": "//"
+    },
+    {
+        "Question": "What is an array?",
+        "Options": [ "Variable", "Collection of elements", "Function", "Class" ],
+        "CorrectAnswer": "Collection of elements"
+    },
+    {
+        "Question": "What is the output type of Console.WriteLine() in C#?",
+        "Options": [ "String", "Void", "Integer", "Boolean" ],
+        "CorrectAnswer": "Void"
+    },
+    {
+        "Question": "Which loop executes at least once even if condition is false?",
+        "Options": [ "for", "while", "do-while", "foreach" ],
+        "CorrectAnswer": "do-while"
+    },
+    {
+        "Question": "What is the file extension of C# source file?",
+        "Options": [ ".cs", ".cpp", ".java", ".py" ],
+        "CorrectAnswer": ".cs"
+    },
+    {
+        "Question": "Which keyword is used to inherit a class in C#?",
+        "Options": [ "extends", "inherits", "base", "override" ],
+        "CorrectAnswer": "base"
+    },
+    {
+        "Question": "Which statement terminates the nearest loop?",
+        "Options": [ "break", "continue", "return", "exit" ],
+        "CorrectAnswer": "break"
+    },
+    {
+        "Question": "Which operator is used for logical AND in C++?",
+        "Options": [ "&", "&&", "||", "|" ],
+        "CorrectAnswer": "&&"
+    }
+]
