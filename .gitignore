@@ -1,0 +1,29 @@
+##############################
+# Build artifacts
+##############################
+bin/
+obj/
+out/
+[Bb]uild/
+[Ll]og/
+
+##############################
+# VS / Rider / .NET cache
+##############################
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Razor cache
+*.csproj.user
+*.csproj.nuget.*
+*.nuget.cache
+
+# ASP.NET temporary files
+# (Very important for clean repo)
+**/Properties/launchSettings.json
+
+###########################
