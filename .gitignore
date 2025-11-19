@@ -1,29 +1,24 @@
-##############################
-# Build artifacts
-##############################
-bin/
-obj/
-out/
-[Bb]uild/
-[Ll]og/
-
-##############################
-# VS / Rider / .NET cache
-##############################
+# Visual Studio
 .vs/
-.idea/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-# Razor cache
-*.csproj.user
-*.csproj.nuget.*
-*.nuget.cache
+# Build results
+bin/
+obj/
+Debug/
+Release/
 
-# ASP.NET temporary files
-# (Very important for clean repo)
-**/Properties/launchSettings.json
+# NuGet
+*.nupkg
+project.nuget.cache
 
-###########################
+# Copilot AI Indexes
+CopilotIndices/
+
+# Cache
+*.cache
+*.db
+*.v2
